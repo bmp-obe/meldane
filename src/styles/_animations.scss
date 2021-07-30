@@ -1,0 +1,96 @@
+@import "_mixins";
+
+@-webkit-keyframes fadein {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadein {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+.fade-in {
+    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+.bounce-effect {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+
+    0%, 20%, 50%, 80%, 100% {
+        @include transform(translateY(0));
+    }
+    40% {
+        @include transform(translateY(-15px));
+    }
+    60% {
+        @include transform(translateY(-5px));
+    }
+
+}
+
+@keyframes bounce {
+
+    0%, 20%, 50%, 80%, 100% {
+        @include transform(translateY(0));
+    }
+    40% {
+        @include transform(translateY(-15px));
+    }
+    60% {
+        @include transform(translateY(-5px));
+    }
+
+}
+
+.slide-down-effect {
+    -webkit-animation: slide-down ease-in-out 2s infinite;
+    animation: slide-down ease-in-out 2s infinite;
+}
+
+@-webkit-keyframes slide-down {
+
+    0%, 20%, 50%, 80%, 100% {
+        @include transform(translateY(0));
+    }
+    40% {
+        @include transform(translateY(-30px));
+    }
+    60% {
+        @include transform(translateY(0));
+        opacity: 1;
+    }
+
+}
+
+@keyframes slide-down {
+
+    0%, 20%, 50%, 80%, 100% {
+        @include transform(translateY(0));
+    }
+    40% {
+        @include transform(translateY(-30px));
+    }
+    60% {
+        @include transform(translateY(0));
+        opacity: 1;
+    }
+
+}

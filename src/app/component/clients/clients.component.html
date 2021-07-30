@@ -1,0 +1,27 @@
+<div class="container fade-in pb-5">
+  <div class="row">
+    <div class="col-6">
+      <h2 class="text-uppercase">Purposes</h2>
+      <div *ngFor="let purpose of clients.purposes" class="w-100">
+        <label>{{ purpose }}</label>
+      </div>
+    </div>
+    <div class="col-6 p-2">
+      <h2 class="text-uppercase">Clients</h2>
+      <div *ngFor="let client of clients.clients" class="w-100">
+        <label>{{ client }}</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 pt-2">
+      <h4 class="text-uppercase">Other Services Offered Include</h4>
+      <div class="w-100">
+        <label>Advisory</label>
+      </div>
+      <div class="w-100">
+        <label>Expert witness</label>
+      </div>
+    </div>
+  </div>
+</div>

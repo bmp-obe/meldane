@@ -1,0 +1,25 @@
+@import "_colours";
+
+h1, h2, h3, h4, h5, h6, input, p, label, textarea {
+  font-family: "GowunDodum-Regular", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-blue;
+}
+
+@media only screen and (max-width: 576px) {
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  p, label {
+    font-size: 1.1rem;
+  }
+
+}

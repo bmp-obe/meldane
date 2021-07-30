@@ -1,0 +1,26 @@
+@import "../../../../styles/_colours";
+@import "../../../../styles/_mixins";
+
+input {
+  width: 100%;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  border: 0;
+  border-bottom: 2px solid $primary-grey;
+  @include transition(all, .18s, ease-in);
+  border-radius: 0;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &.error {
+    border-bottom: 2px solid $primary-red;
+    color: $primary-red;
+
+    &::placeholder {
+      color: $primary-red;
+    }
+  }
+
+}

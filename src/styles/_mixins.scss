@@ -1,0 +1,37 @@
+@mixin transform($property...) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin transition($property, $duration, $transition-timing-function:null) {
+  -webkit-transition: $property $duration $transition-timing-function;
+  transition: $property $duration $transition-timing-function;
+}
+
+@mixin box-shadow($property...) {
+  -webkit-box-shadow: $property;
+  box-shadow: $property;
+}
+
+@mixin background-image($image-url, $parallaxScrolling) {
+  background: $image-url;
+  background-attachment: if($parallaxScrolling, fixed, scroll);
+}
+
+@mixin hr($background-color) {
+  border: 0 none;
+  color: rgba(26, 26, 26, .15);
+  background-color: $background-color;
+  height: 2px;
+}
+
+@mixin linear-gradient-bg() {
+  background: linear-gradient(45deg, $primary-blue 0%, $primary-blue 69%, $primary-blue 100%);
+  background-attachment: fixed;
+}
+
+@mixin linear-gradient-bg-grey() {
+  background: linear-gradient(45deg, #575757 0%, rgb(61, 61, 61) 69%, rgb(32, 32, 32) 100%);
+  background-attachment: fixed;
+}

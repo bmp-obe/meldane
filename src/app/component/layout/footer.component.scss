@@ -1,0 +1,10 @@
+@import "../../../styles/_colours";
+@import "../../../styles/_mixins";
+
+.footer {
+  @include linear-gradient-bg();
+}
+
+hr {
+  @include hr($primary-grey);
+}

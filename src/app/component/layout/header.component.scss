@@ -1,0 +1,142 @@
+@import "../../../styles/_colours";
+@import "../../../styles/_mixins";
+
+.navbar {
+  z-index: 100;
+
+  .container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+}
+
+div {
+
+  div {
+
+    div {
+
+      h1:first-child {
+        color: #000000;
+      }
+
+    }
+
+  }
+
+}
+
+.dropdown-menu {
+  @include box-shadow(none);
+  @include transition(all, .6s, cubic-bezier(.75, .51, .23, .69));
+  border: none;
+  max-height: 0;
+  visibility: hidden;
+
+  .header-nav-item {
+    @include transition(all, .2s, ease-in-out);
+    border-bottom: 1px solid #000000;
+
+    &:hover {
+      background-color: $primary-grey;
+      cursor: pointer;
+
+      label {
+        cursor: pointer;
+      }
+
+    }
+
+  }
+
+  .header-nav-item:first-child {
+    border-top: 1px solid #000000;
+  }
+
+  &.show {
+    @include transition(all, .6s, cubic-bezier(.75, .51, .23, .69) .15s);
+    max-height: 190px;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding-bottom: 0;
+  }
+
+}
+
+#hamburger {
+  @include transition(color, .3s);
+  width: 36px;
+  height: 30px;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & span {
+    @include transition(all, .3s, cubic-bezier(1, 0.54, 0.58, 1));
+    height: .4rem;
+    width: .4rem;
+    margin: 0 auto;
+    background-color: #000000;
+  }
+
+  & span:first-of-type {
+    @include transform(rotate(45deg) translate(2px, 2px));
+  }
+
+  & span:nth-of-type(2) {
+    @include transform(translate(20px) rotate(360deg));
+    opacity: 0;
+  }
+
+  & span:last-of-type {
+    @include transform(rotate(-45deg) translate(1px, -1px));
+  }
+
+  &.active span {
+    @include transform(none);
+    opacity: 1;
+    margin: 5px auto;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .navbar {
+    @include transition(all, .3s, ease-in-out);
+    position: fixed;
+    background-color: $primary-blue;
+  }
+
+  .header-nav-item {
+    margin-right: 36px;
+    font-size: 1rem;
+
+    label {
+      @include transition(all, .15s, ease-in-out);
+    }
+
+    &:hover {
+
+      label {
+        opacity: .7;
+        cursor: pointer;
+
+      }
+
+    }
+
+  }
+
+}

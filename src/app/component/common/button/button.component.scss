@@ -1,0 +1,23 @@
+@import "../../../../styles/colours";
+@import "../../../../styles/mixins";
+
+.button {
+  background-color: $primary-red;
+  color: #fff;
+  border: 2px solid $primary-red;
+  border-radius: 4px;
+  transition: all .2s ease-out;
+
+  cursor: pointer;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+
+  &:focus {
+    @include box-shadow(none);
+  }
+
+  &:hover {
+    background-color: #922119;
+    border-color: #922119;
+  }
+
+}

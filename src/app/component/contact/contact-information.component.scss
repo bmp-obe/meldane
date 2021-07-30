@@ -1,0 +1,42 @@
+@import "../../../styles/colours";
+@import "../../../styles/mixins";
+
+.contact-information {
+  @include linear-gradient-bg();
+}
+
+hr {
+  @include hr(#fff);
+}
+
+.container {
+
+  .col-6:last-child {
+    height: 380px;
+  }
+
+}
+
+.address {
+
+  h4.opacity-1 {
+    @include transition(all, 1s);
+  }
+
+  h5.opacity-1, hr.opacity-1 {
+    @include transition(all, 1s, .1s);
+  }
+
+}
+
+.contact-details {
+
+  h4.opacity-1 {
+    @include transition(all, 1s, .3s);
+  }
+
+  h5.opacity-1, hr.opacity-1 {
+    @include transition(all, 1s, .5s);
+  }
+
+}

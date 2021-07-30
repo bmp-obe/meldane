@@ -1,0 +1,44 @@
+<div class="container mt-3 mb-2 mb-md-5">
+  <div class="row">
+    <div class="col-6" [formGroup]="form">
+      <h2 class="text-uppercase">Contact Us</h2>
+
+      <!-- success notification -->
+      <div class="notification w-100 p-4 mb-4 mt-4" *ngIf="hasEmailBeenSent">
+        <div class="row justify-content-center">
+          <fa-icon [icon]="faCheck"></fa-icon>
+        </div>
+        <div class="row justify-content-center">
+          <h6 class="text-white mb-0 pt-1 pb-3">
+            Thanks for contacting us! We'll be in touch as soon as possible
+          </h6>
+        </div>
+      </div>
+      <app-input [error]="firstNameInvalid"
+                 placeholder="First name"
+                 errorMessage="First name is required"
+                 controlName="firstName"></app-input>
+      <app-input [error]="lastNameInvalid"
+                 placeholder="Last name"
+                 errorMessage="Last name is required"
+                 controlName="lastName"></app-input>
+      <app-input [error]="emailInvalid"
+                 type="email"
+                 placeholder="email@email.com"
+                 errorMessage="Email is required"
+                 controlName="emailAddress"></app-input>
+      <app-input placeholder="0123456789" controlName="phoneNumber" type="number"></app-input>
+      <div class="mb-4">
+        <textarea rows="4"
+                  [class.error]="enquiryInvalid"
+                  type="text"
+                  placeholder="{{ enquiryInvalid ? '15-300 characters please': 'Your Message' }}"
+                  formControlName="enquiry"></textarea>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <app-button label="Submit" (buttonClicked)="sendEmail()"></app-button>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+@import "../../../styles/mixins";
+@import "../../../styles/colours";
+
+.hero-image {
+  @include linear-gradient-bg();
+  padding: 10%;
+  //background-image: url(../../../assets/img/hero.jpg);
+  background: linear-gradient(180deg, #163072, #183889, #1f439e);
+  background-size: cover;
+
+  div.column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .hero-image {
+    height: 2px;
+    padding: 0;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .hero-image {
+    height: 550px;
+
+    .container {
+      margin-top: 8rem;
+
+      .column {
+
+        div {
+
+          h1 {
+            font-size: 3rem;
+          }
+
+          div {
+
+            button.button-primary {
+              width: 20%;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
