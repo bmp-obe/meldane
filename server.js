@@ -1,7 +1,6 @@
 //Install express server
 const express = require('express');
 const path = require('path');
-const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const APP = express();
 const HOST = 'https://meldane.herokuapp.com';
