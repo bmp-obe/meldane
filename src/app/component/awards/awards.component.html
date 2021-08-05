@@ -1,0 +1,20 @@
+<h2 class="text-uppercase text-center mt-3 mb-2">Awards</h2>
+<div class="awards d-flex flex-wrap justify-content-center mb-5">
+  <div class="award col-3 p-2 text-center">
+    <img src="../../../assets/img/nedbank.png" width="90" height="90" alt="nedbank logo">
+    <h4>Nedbank Home Loans Collections & Recoveries</h4>
+    <h4 class="pt-3">2017</h4>
+    <p class="pb-3">Top Service Level Agreement</p>
+    <h5>{{ companyName }}</h5>
+    <p class="font-weight-bold">Valuer</p>
+  </div>
+  <div class="award col-3 p-2 pb-4 pt-4 text-center" *ngFor="let year of awardYears">
+    <img src="../../../assets/img/nedbank.png" width="80" height="80" alt="nedbank logo">
+    <h4>Nedbank Home Loans, Collections & Recoveries</h4>
+    <h4 class="pt-3">{{ year }}</h4>
+    <p class="pb-3">Vendor Engagement</p>
+    <h5 class="pb-1">{{ companyName }}</h5>
+    <p class="font-weight-bold">National Winner</p>
+    <p class="font-weight-bold">Outstanding Performer</p>
+  </div>
+</div>

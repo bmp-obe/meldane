@@ -2,12 +2,12 @@
 @import "../../../../styles/mixins";
 
 .button {
-  background-color: $primary-red;
-  color: #fff;
-  border: 2px solid $primary-red;
+  background-color: #ffffff;
+  color: $primary-blue;
+  border: 2px solid #ffffff;
   border-radius: 4px;
   transition: all .2s ease-out;
-
+  width: 150px;
   cursor: pointer;
   padding: 0.3rem 1rem 0.3rem 1rem;
 
@@ -16,8 +16,8 @@
   }
 
   &:hover {
-    background-color: #922119;
-    border-color: #922119;
+    background-color: #ded9d9;
+    border-color: #ded9d9;
   }
 
 }

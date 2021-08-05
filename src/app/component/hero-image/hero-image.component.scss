@@ -7,13 +7,6 @@
   //background-image: url(../../../assets/img/hero.jpg);
   background: linear-gradient(180deg, #163072, #183889, #1f439e);
   background-size: cover;
-
-  div.column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
 }
 
 @media (min-width: 576px) {
@@ -31,7 +24,7 @@
     height: 550px;
 
     .container {
-      margin-top: 8rem;
+      margin-top: 6rem;
 
       .column {
 

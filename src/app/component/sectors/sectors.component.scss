@@ -4,7 +4,6 @@
   .row {
     .sector {
       border: 1px solid $primary-grey;
-      cursor: pointer;
       transition: background-color .2s ease-out;
 
       &:hover {
@@ -19,7 +18,9 @@
       }
 
       label {
-        cursor: pointer;
+        &.sub-label {
+          font-size: 10px;
+        }
       }
     }
   }

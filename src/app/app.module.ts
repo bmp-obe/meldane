@@ -9,16 +9,21 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { AwardsComponent } from './component/awards/awards.component';
 import { BackgroundComponent } from './component/background/background.component';
 import { ButtonComponent } from './component/common/button/button.component';
-import { ContactComponent } from './component/contact/contact.component';
-import { ContactInformationComponent } from './component/contact/contact-information.component';
 import { ClientsComponent } from './component/clients/clients.component';
+import { ContactComponent } from './component/contact/contact.component';
+import { ContactFormComponent } from './component/contact/contact-form.component';
+import { ContactInfoComponent } from './component/contact/contact-info.component';
+import { ServicesComponent } from './component/services/services.component';
 import { FooterComponent } from './component/layout/footer.component';
+import { GaryComponent } from './component/gary/gary.component';
 import { HeaderComponent } from './component/layout/header.component';
 import { HeroImageComponent } from './component/hero-image/hero-image.component';
 import { HomeComponent } from './component/home/home.component';
 import { InputComponent } from './component/common/input/input.component';
+import { LocationComponent } from './component/location/location.component';
 import { SectorsComponent } from './component/sectors/sectors.component';
 
 @NgModule({
@@ -34,16 +39,21 @@ import { SectorsComponent } from './component/sectors/sectors.component';
   ],
   declarations: [
     AppComponent,
+    AwardsComponent,
     BackgroundComponent,
     ButtonComponent,
+    ServicesComponent,
     ClientsComponent,
     ContactComponent,
-    ContactInformationComponent,
+    ContactFormComponent,
+    ContactInfoComponent,
     FooterComponent,
+    GaryComponent,
     HeaderComponent,
     HeroImageComponent,
     HomeComponent,
     InputComponent,
+    LocationComponent,
     SectorsComponent
   ],
   bootstrap: [AppComponent]

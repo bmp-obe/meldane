@@ -1,0 +1,16 @@
+@import "../../../styles/_colours";
+
+.gary {
+
+  .job, .membership {
+    border: 1px solid $primary-grey;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: $primary-grey;
+    }
+  }
+
+}

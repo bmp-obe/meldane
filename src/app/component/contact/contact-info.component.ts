@@ -3,11 +3,13 @@ import { Component } from '@angular/core';
 import { Data } from '../../data/data';
 
 @Component({
-  selector: 'app-contact-information',
-  templateUrl: './contact-information.component.html',
-  styleUrls: ['./contact-information.component.scss']
+  selector: 'app-contact-info',
+  templateUrl: './contact-info.component.html',
+  styleUrls: ['./contact-info.component.scss']
 })
-export class ContactInformationComponent {
+export class ContactInfoComponent {
+
+  showDetails = false;
 
   readonly contact: any = {
     copyright: Data.COPY_RIGHT,
@@ -20,6 +22,7 @@ export class ContactInformationComponent {
     email: 'meldane@mweb.co.za',
     cellNumber: '082 900 8904',
     landline: '+27 11 462-6350',
-    fax: '+27 11 462-2669'
+    fax: '+27 11 462-2669',
+    accountsEmail: 'melacc@mweb.co.za'
   };
 }

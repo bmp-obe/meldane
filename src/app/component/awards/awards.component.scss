@@ -1,0 +1,12 @@
+@import "../../../styles/_colours";
+
+.awards {
+  .award {
+    border: 1px solid $primary-grey;
+    transition: background-color .2s ease-out;
+
+    &:hover {
+      background-color: $primary-grey;
+    }
+  }
+}
