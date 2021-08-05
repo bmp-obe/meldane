@@ -1,0 +1,19 @@
+@import "../../../styles/colours";
+
+.clients {
+  .client {
+    border: 1px solid $primary-grey;
+    transition: background-color .2s ease-out;
+
+    &:hover {
+      background-color: $primary-grey;
+    }
+
+    .icon {
+      fa-icon {
+        font-size: 3rem;
+        color: $secondary-grey;
+      }
+    }
+  }
+}

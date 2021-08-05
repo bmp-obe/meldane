@@ -1,0 +1,29 @@
+<div class="contact-information">
+  <div class="address">
+    <h3 class="text-white text-uppercase pb-2">Physical Address</h3>
+    <p class="text-white mb-0">{{contact.lineOne}}</p>
+    <p class="text-white mb-0">{{contact.lineTwo}}</p>
+    <p class="text-white mb-0">{{contact.lineThree}}</p>
+    <p class="text-white">{{contact.lineFour}}</p>
+  </div>
+  <hr class="mb-0" />
+  <div class="contact-details pt-3 pb-4">
+    <h3 class="header text-white text-uppercase mb-2"
+        (click)="showDetails = true">
+      {{ showDetails ? 'Contact Information' : 'Click to see more'}}
+    </h3>
+    <div class="text-white" *ngIf="showDetails">
+      <label>Email:</label><label class="pl-1">{{contact.email}}</label>
+    </div>
+    <div class="text-white" *ngIf="showDetails">
+      <label>Accounts:</label><label class="pl-1">{{contact.accountsEmail}}</label>
+    </div>
+    <div class="text-white" *ngIf="showDetails">
+      <label>Cell Number:</label><label class="pl-1">{{contact.cellNumber}}</label>
+    </div>
+    <div class="text-white" *ngIf="showDetails">
+      <label>Land Line:</label><label class="pl-1">{{contact.landline}}</label>
+    </div>
+  </div>
+  <hr class="d-block d-md-none" />
+</div>

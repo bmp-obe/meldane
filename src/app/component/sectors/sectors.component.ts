@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faBuilding, faHome, faIndustry, faTractor } from '@fortawesome/free-solid-svg-icons';
+import { faBuilding, faHome, faIndustry, faTractor, faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sectors',
@@ -25,6 +25,11 @@ export class SectorsComponent {
       {
         header: 'Agricultural',
         icon: 'faTractor'
+      },
+      {
+        header: 'Municipal',
+        subLabel: '(Objections and Appeals)',
+        icon: 'faExclamationCircle'
       }
     ]
   };
@@ -33,6 +38,7 @@ export class SectorsComponent {
     faBuilding,
     faHome,
     faIndustry,
-    faTractor
+    faTractor,
+    faExclamationCircle
   };
 }

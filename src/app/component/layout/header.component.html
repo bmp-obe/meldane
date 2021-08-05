@@ -2,15 +2,20 @@
   <div class="container w-100 mw-100 m-0 p-sm-2 p-md-0">
     <div class="d-flex align-items-center">
       <img src="./assets/img/logo.png" class="d-block" width="75" height="60" />
+      <div class="pl-2">
+        <p class="company-name text-uppercase font-weight-bold">{{ header.companyNameShort }}</p>
+        <label class="{{ state === 'small' ? 'text-dark' : 'text-white' }}">{{ slogan }}</label>
+      </div>
     </div>
     <div id="header-nav" class="default">
       <div class="header-nav d-block d-sm-flex">
         <div *ngFor="let headerItem of header.items"
              class="header-nav-item d-none d-sm-block {{headerItem.customClasses}}"
              [ngxScrollTo]="headerItem.scrollTo"
-             [ngxScrollToOffset]="headerItem.scrollToOffset">
-          <label
-            class="mb-0 text-uppercase {{ state === 'small' ? 'text-dark' : 'text-white' }}">{{headerItem.name}}</label>
+             [ngxScrollToOffset]="scrollToOffset">
+          <label class="text-uppercase {{ state === 'small' ? 'text-dark' : 'text-white' }}">
+            {{headerItem.name}}
+          </label>
         </div>
       </div>
     </div>
@@ -23,9 +28,10 @@
       </button>
     </div>
     <div class="overflow-hidden d-block w-100 text-center dropdown-menu pt-0">
-      <div *ngFor="let headerItem of header.items; let index = index;"
+      <div *ngFor="let headerItem of header.items"
            class="header-nav-item d-sm-block text-uppercase"
-           (click)="adjustLines()" [ngxScrollTo]="headerItem.scrollTo">
+           (click)="adjustLines()"
+           [ngxScrollTo]="headerItem.scrollTo">
         <label class="mt-2 mb-2">{{headerItem.name}}</label>
       </div>
     </div>

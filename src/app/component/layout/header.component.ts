@@ -16,14 +16,19 @@ export class HeaderComponent {
     companyName: 'Meldane Property And Valuation Services CC',
     companyNameShort: 'Meldane',
     items: [
-      { name: 'Background', scrollTo: 'background', scrollToOffset: Data.SCROLL_TO_OFFSET },
-      { name: 'Sectors', scrollTo: 'sectors', scrollToOffset: Data.SCROLL_TO_OFFSET },
-      { name: 'Services', scrollTo: 'services', scrollToOffset: Data.SCROLL_TO_OFFSET },
-      { name: 'Contact', scrollTo: 'contact', scrollToOffset: Data.SCROLL_TO_OFFSET, customClasses: 'mr-sm-0' }
+      { name: 'Background', scrollTo: 'background' },
+      { name: 'Sectors', scrollTo: 'sectors' },
+      { name: 'Services', scrollTo: 'services' },
+      { name: 'Locations', scrollTo: 'locations' },
+      { name: 'Clients', scrollTo: 'clients' },
+      { name: 'Contact', scrollTo: 'contact',  },
+      { name: 'Awards', scrollTo: 'awards', customClasses: 'mr-sm-0' }
     ]
   };
+  readonly scrollToOffset: number = Data.SCROLL_TO_OFFSET;
   shouldAnimate = true;
   state = 'large';
+  slogan = 'Minimising Risk, Adding Value';
 
   adjustLines(): void {
     this.shouldAnimate = !this.shouldAnimate;
@@ -56,7 +61,7 @@ export class HeaderComponent {
       scrollPosition = window.view.pageYOffset;
     }
 
-    if (scrollPosition > 80) {
+    if (scrollPosition > 30) {
       this.state = 'small';
     } else {
       this.state = 'large';

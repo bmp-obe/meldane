@@ -1,0 +1,21 @@
+@import "../../../styles/colours";
+@import "../../../styles/mixins";
+
+hr {
+  @include hr(#fff);
+}
+
+.contact-details {
+  .header {
+    cursor: pointer;
+    transition: opacity .2s;
+
+    &.closed {
+      padding-bottom: 1.5rem;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

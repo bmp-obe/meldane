@@ -1,0 +1,40 @@
+<div class="gary container mb-4">
+  <h2>{{ title }}</h2>
+  <h5 class="mb-1 font-weight-bold">{{ name }} - {{ jobTitle }}</h5>
+  <div class="d-flex justify-content-between">
+    <div class="memberships mt-3 mb-3 col-8 pl-0">
+      <h4 class="mb-2">Memberships</h4>
+      <div class="membership d-flex" *ngFor="let membership of memberships">
+        <div class="col-6">
+          <label>{{ membership.entity }}</label>
+        </div>
+        <div class="col-6">
+          <label>Registration Number {{ membership.regNumber }}</label>
+        </div>
+      </div>
+    </div>
+    <img src="../../../assets/img/gary.png" alt="gary wampach" />
+  </div>
+  <div class="jobs mb-3">
+    <h4 class="mb-2">Career History</h4>
+    <div class="job d-flex" *ngFor="let job of jobs">
+      <div class="col-2 pl-0">
+        <label class="font-weight-bold">{{ job.time }}</label>
+      </div>
+      <div class="col-3">
+        <label>{{ job.company }}</label>
+      </div>
+      <div class="col-7">
+        <label>{{ job.title }}</label>
+      </div>
+    </div>
+  </div>
+  <div class="work-experience">
+    <h4 class="mb-2">Work Experience</h4>
+    <p>{{ workExperienceDescription }}</p>
+    <p class="mb-2">Valuation experience:</p>
+    <div class="valuation-experience" *ngFor="let experience of experiences">
+      <label>- {{ experience }}</label>
+    </div>
+  </div>
+</div>

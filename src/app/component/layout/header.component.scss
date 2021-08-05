@@ -8,6 +8,12 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
+    .d-flex {
+      .company-name {
+        color: $primary-red;
+      }
+    }
   }
 
 }
@@ -124,6 +130,7 @@ div {
     font-size: 1rem;
 
     label {
+      font-size: 13px;
       @include transition(all, .15s, ease-in-out);
     }
 

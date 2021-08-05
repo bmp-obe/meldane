@@ -1,11 +1,13 @@
 <div class="sectors container pb-4">
-  <h2 class="pb-2 text-uppercase">{{sectors.header}}</h2>
-  <div class="row text-center">
-    <div *ngFor="let item of sectors.items" class="sector col-12 col-md-3">
-      <div class="icon">
+  <div class="row justify-content-center text-center">
+    <div *ngFor="let item of sectors.items" class="sector col-12 col-md-2">
+      <div class="icon text-center">
         <fa-icon [icon]="icons[item.icon]"></fa-icon>
       </div>
       <label class="text-uppercase font-weight-bold">{{item.header}}</label>
+      <div class="row justify-content-center">
+        <label class="sub-label" *ngIf="item.subLabel">{{ item.subLabel }}</label>
+      </div>
     </div>
   </div>
 </div>

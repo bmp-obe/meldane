@@ -1,18 +1,12 @@
 <div class="hero-image fade-in d-flex flex-column justify-content-between position-relative pb-0">
-  <div class="container d-flex justify-content-center">
-    <div class="column">
-      <div>
-        <h1 class="text-white text-uppercase">{{heroImage.name}}</h1>
-        <p class="text-white mb-5">{{heroImage.paragraph}}</p>
-        <div>
-          <div ngxScrollTo="background" [ngxScrollToOffset]="offset">
-            <app-button label="Find Out More" customClasses="d-none d-md-block"></app-button>
-          </div>
-          <div ngxScrollTo="background" [ngxScrollToOffset]="offset">
-            <app-button label="Find Out More" customClasses="d-inline d-md-none mb-4"></app-button>
-          </div>
-        </div>
-      </div>
+  <div class="container text-center">
+    <img src="./assets/img/logo.png" alt="company logo" />
+    <h1 class="text-white text-uppercase font-weight-bold pt-2">{{ heroImage.name }}</h1>
+    <div class="text-left text-white pt-3">
+      <p class="mb-3">{{heroImage.paragraph}}</p>
+      <label>Reg. No: {{ heroImage.regNumber }}</label>
+      <p>VAT No: {{ heroImage.vatNumber }}</p>
+      <p>{{ beeStatus }}</p>
     </div>
   </div>
 </div>

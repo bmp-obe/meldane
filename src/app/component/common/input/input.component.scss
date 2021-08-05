@@ -9,17 +9,20 @@ input {
   border-bottom: 2px solid $primary-grey;
   @include transition(all, .18s, ease-in);
   border-radius: 0;
+  background-color: transparent;
+  color: #ffffff;
 
   &:focus-visible {
     outline: none;
   }
 
   &.error {
-    border-bottom: 2px solid $primary-red;
-    color: $primary-red;
+    border-bottom: 2px solid $error-red;
+    color: $error-red;
+    font-weight: bold;
 
     &::placeholder {
-      color: $primary-red;
+      color: $error-red;
     }
   }
 
