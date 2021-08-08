@@ -11,8 +11,8 @@ export class GaryComponent {
   readonly jobTitle: string = 'Professional Registered Valuer';
 
   readonly memberships: any[] = [
-    { entity: 'SA Council for the Valuers Profession', regNumber: '144/9' },
-    { entity: 'SA Institute of Valuers', regNumber: '144/9' }
+    { entity: 'SA Council for the Property Valuers Profession', regNumber: 'Registration Number 144/9' },
+    { entity: 'Member of the SA Institute of Valuers', regNumber: '' }
   ];
 
   readonly jobs: any[] = [{
@@ -37,13 +37,10 @@ export class GaryComponent {
 
   readonly experiences: string[] = [
     'Residential, commercial, industrial, and agricultural valuations',
-    'Large shopping centres, tertiary institutions, government hospitals, and military bases for general valuation purposes',
-    'Valuations for rating purposes in the most provinces involving mostly non-residential properties',
+    'Valuations for municipal purposes (non-residential properties) - Rating Purposes',
     'Valuation of property for expropriation purposes',
     'Valuation for acquisition purposes (various properties)',
     'Valuation (market and forced sale) for various banks for security and insolvency purposes',
-    'Valuation of all Nedbank owned properties on an annual basis which includes all their campus sites, regional officers ' +
-    'and other related properties',
     'Preparation of reports for valuation matters that await court procedures and to appear as an expert witness'
   ];
 }

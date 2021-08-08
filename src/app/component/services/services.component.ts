@@ -11,21 +11,21 @@ export class ServicesComponent {
     header: 'These services include valuations for the following purposes and services',
     purposes: [
       'Acquisitions',
-      'Disposal',
+      'Disposals',
       'Deceased Estates',
-      'Foreclosure',
-      'Insolvency',
+      'Foreclosures',
+      'Insolvencies',
       'Insured - Replacement Values',
       'Municipal Rating Valuations - Objections and Appeals',
-      'Expropriation - Road Widening and Eskom Power Lines'
+      'Expropriation',
+      'Servitudes'
     ],
     clients: [
       'Corporate Companies',
       'Financial Institutions',
-      'Municipalities',
       'Attorneys',
       'Managing Agents',
-      'Individual Insurance Brokers',
+      'Insurance Brokers',
       'Private Individuals'
     ]
   };
