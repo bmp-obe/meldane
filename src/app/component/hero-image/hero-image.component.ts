@@ -12,9 +12,8 @@ export class HeroImageComponent {
   readonly heroImage: any = {
     name: 'Meldane Property And Valuation Services',
     header: 'Brief Intro',
-    paragraph: 'Meldane was established on 1st August 2001 to provide quality and accurate valuation reports on fixed ' +
-      'property. As well as creating an advisory service to both the private and public sector. Valuations are conducted ' +
-      'on residential, commercial (business), industrial, agricultural and municipal properties.',
+    paragraph: 'Meldane valuers provide valuation reports on fixed properties. That includes residential, ' +
+      'commercial, business, and industrial.',
     regNumber: '2001/028108/23',
     vatNumber: '4220195178'
   };

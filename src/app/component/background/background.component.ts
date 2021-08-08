@@ -15,14 +15,10 @@ export class BackgroundComponent {
       '"turnaround" time while maintaining a record of accuracy with all instructions.'
   };
 
-  readonly paragraph: string = 'Meldane was established on 1st August 2001 by G. Wampach who was initially outsourced to value all of ' +
-    'Nedcors (Nedbank, Perm and Peoples Bank) properties that were either in their possession or about to be ' +
-    'sold via the sale in execution route. This soon spread to other banks and Meldane now undertakes a wide ' +
-    'range of valuations for these institutions for various properties and for different purposes. Meldane covers ' +
-    'the entire country and uses the services of other registered valuers in distant places to assist in its day to ' +
-    'day operations. G Wampach is a hands on person who manages a busy office, interacts with his staff and ' +
-    'clients daily, gives presentations and short workshops, prepares reports and is involved with the ' +
-    'preparation/valuation of mostly non-residential properties for municipal general valuation purposes when ' +
-    'asked to subcontract. G. Wampach is also active in the objection process for Meldane\'s clients which are ' +
-    'mostly in the Johannesburg area.';
+  readonly paragraph: string = 'Meldane was established on 1st August 2001 by Gary Wampach who was initially outsourced to value all of ' +
+    'Nedcor\'s (Nedbank, Perm and People\'s Bank) properties that were either in their possession or about to be sold via the sale in' +
+    ' execution route. This soon spread to other financial institutions and Meldane now undertakes a wide range of valuations for a number of ' +
+    'clients for various properties and different purposes. Meldane covers the entire country and uses the services of other registered ' +
+    'valuers in distant places to assist in its day to day operations. Gary also has extensive knowledge of municipal valuations roles' +
+    ' and is active in the objections and appeals process';
 }
