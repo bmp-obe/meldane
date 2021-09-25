@@ -1,5 +1,4 @@
 # Meldane Property and Valuation Services Website
-Website for Meldane Property and Valuation Services cc
 
 ### Running
 - `yarn start`: runs an express server
@@ -7,7 +6,8 @@ Website for Meldane Property and Valuation Services cc
 - `yarn run dev:ssr`: use Universal for server side rendering locally
 
 ### Deployment
-- `heroku-postbuild`: runs after build is complete when deploying to heroku (`ng build --aot --configuration production`)
+- `heroku-postbuild`: runs after build is complete when deploying to heroku. Runs `yarn run build:ssr` 
+  which in turn runs `ng build --prod --aot && ng run meldane:server:production`
 
 "A normal Angular application executes in the browser, rendering pages in the DOM in response to user actions. Angular Universal 
 executes on the server, generating static application pages that later get bootstrapped on the client. This means that the 
