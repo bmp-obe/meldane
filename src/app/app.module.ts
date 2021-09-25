@@ -30,7 +30,7 @@ import { SectorsComponent } from './component/sectors/sectors.component';
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }), // required for server-side rendering
     FontAwesomeModule,
     FormsModule,
     NgbModule,
